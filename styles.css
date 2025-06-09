@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Newsreader&display=swap");
+
+:root{
+    --name-font-family: 'Croissant One', sans-serif;
+    --p-font-family: 'Newsreader', sans-serif;
+    --main-font-family: 'Playfair Display', sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+body header .name{
+    font-family: var(--name-font-family);
+    padding: 0.5rem 2rem;
+}
+
+body header .header-link{
+    padding: .5rem 2rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--main-font-family);
+    font-size: 1.5rem;
+
+    padding: 3rem 3rem 6rem ;
+}
