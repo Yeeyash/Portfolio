@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Newsreader&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Meriweather&display=swap");
 
 :root{
     --name-font-family: 'Croissant One', sans-serif;
     --p-font-family: 'Newsreader', sans-serif;
     --main-font-family: 'Playfair Display', sans-serif;
+    --p-font-family-meriweather: 'Meriweather', sans-serif;
 }
 
 body{
@@ -25,12 +27,29 @@ body header{
 
 body header .name{
     font-family: var(--name-font-family);
+    font-size: 1.8rem;
     padding: 0.5rem 2rem;
 }
 
 body header .header-link{
+    font-size: 1.8rem;
     padding: .5rem 2rem;
 }
+
+body header a{
+    list-style: none;
+    text-decoration: none;
+}
+
+body header a:link{
+    color: black;
+}
+
+body header a:visited{
+    color: blueviolet;
+}
+
+/*a:active, a:hover, a:focus */
 
 main{
     display: flex;
@@ -39,7 +58,101 @@ main{
     align-items: center;
 
     font-family: var(--main-font-family);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 
     padding: 3rem 3rem 6rem ;
+}
+
+aside section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px black solid; /*change border later */
+}
+
+aside section article.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px black solid; */
+
+    font-family: var(--p-font-family-meriweather);
+}
+
+aside section article.projects blockquote{
+    margin-top: 0;
+    
+    font-size: 2rem;
+}
+
+aside section article.projects p{
+    font-size: larger;
+    padding: 0;
+    margin: 0.5rem;
+}
+
+aside section article.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px black solid; */
+
+    font-family: var(--p-font-family-meriweather);
+}
+
+aside section article.skill blockquote{
+    margin-top: 0;
+
+    font-size: 2rem;
+}
+
+aside section article.skill p{
+    font-size: larger;
+    padding: 0;
+    margin: 0.5rem;
+}
+
+
+aside section article.learning{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* border: 1px black solid; */
+    padding: 2rem;
+    font-family: var(--p-font-family-meriweather);
+}
+
+
+aside section article.learning blockquote{
+    margin-top: 0;
+
+    font-size: 2rem;
+}
+
+aside section article.learning p{
+    font-size: larger;
+    padding: 0;
+    margin: 0.5rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: var(--p-font-family-meriweather);
+    font-size: 1.5rem;
+
+    padding: 0;
+    margin: 0.2rem;
+}
+
+footer a{
+    text-decoration: none;
 }
