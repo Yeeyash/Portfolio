@@ -15,6 +15,8 @@ body{
     margin: 0;
     display: flex;
     flex-direction: column;
+
+    background-color: #f1faee;
 }
 
 body header{
@@ -28,11 +30,19 @@ body header{
 body header .name{
     font-family: var(--name-font-family);
     font-size: 1.8rem;
+
+    color: #1d3557;
+
     padding: 0.5rem 2rem;
+
 }
 
 body header .header-link{
     font-size: 1.8rem;
+    font-family: var(--p-font-family-meriweather);
+
+    color: blueviolet;
+
     padding: .5rem 2rem;
 }
 
@@ -42,11 +52,11 @@ body header a{
 }
 
 body header a:link{
-    color: black;
+    color: #457b9d;
 }
 
 body header a:visited{
-    color: blueviolet;
+    color: #1a6899;
 }
 
 /*a:active, a:hover, a:focus */
@@ -60,7 +70,17 @@ main{
     font-family: var(--main-font-family);
     font-size: 1.6rem;
 
+    color: #ff5400;
+
     padding: 3rem 3rem 6rem ;
+}
+
+main .location{
+    color: #390099;
+}
+
+main .course{
+    color: #ffbd00;
 }
 
 aside section{
@@ -68,7 +88,8 @@ aside section{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    border: 1px black solid; /*change border later */
+    border-top: 1px dashed black; /*change border later */
+    border-bottom: 1px dashed black;
 }
 
 aside section article.projects{
@@ -85,12 +106,16 @@ aside section article.projects blockquote{
     margin-top: 0;
     
     font-size: 2rem;
+
+    color: #e85d04;
 }
 
 aside section article.projects p{
     font-size: larger;
     padding: 0;
     margin: 0.5rem;
+
+    color: #023e8a;
 }
 
 aside section article.skill{
@@ -98,7 +123,7 @@ aside section article.skill{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /* border: 1px black solid; */
+    /* border-top: 1px black dashed; */
 
     font-family: var(--p-font-family-meriweather);
 }
@@ -107,12 +132,16 @@ aside section article.skill blockquote{
     margin-top: 0;
 
     font-size: 2rem;
+
+    color: #2a4d69;
 }
 
 aside section article.skill p{
     font-size: larger;
     padding: 0;
     margin: 0.5rem;
+
+    color: #663d00;
 }
 
 
@@ -131,12 +160,16 @@ aside section article.learning blockquote{
     margin-top: 0;
 
     font-size: 2rem;
+
+    color: #e76f51;
 }
 
 aside section article.learning p{
     font-size: larger;
     padding: 0;
     margin: 0.5rem;
+
+    color: #f4a261;
 }
 
 footer{
@@ -150,9 +183,25 @@ footer{
     font-size: 1.5rem;
 
     padding: 0;
-    margin: 0.2rem;
+    margin: 0;
+}
+
+footer .work{
+    font-style: italic;
+    font-weight: bold;
+
+    color: #1d3557;
 }
 
 footer a{
     text-decoration: none;
+    color: #e76f51;
+}
+
+footer a:link{
+    color: #e76f51;
+}
+
+footer a:visited{
+    color: #ff5400;
 }
