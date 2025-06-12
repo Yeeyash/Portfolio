@@ -168,25 +168,77 @@ main .course{
 }
 
 aside section{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    border-top: 1px dashed black; /*change border later */
-    border-bottom: 1px dashed black;
-}
 
-aside section article.projects{
+    position: relative;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    /* border: 1px black solid; */
+    justify-content: center;
+    /* gap: 6rem; */
+    border-top: 1px dashed black; /*change border later */
+    border-bottom: 1px dashed black;
 
-    font-family: var(--p-font-family-meriweather);
+    height: 55rem;
 }
 
-aside section article.projects blockquote{
+aside section article.projects-skill-learning{
+    --spacing: 4rem;
+
+    height: calc(100vh - var(--spacing) * 4);
+
+    /* top: var(--spacing);     */
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 50px;
+    border: 3px black solid;
+    border-radius: 30px;
+
+    width: 90vw;
+    z-index: 3;
+    
+    padding: 2rem;
+
+    box-sizing: border-box;
+
+    font-family: var(--p-font-family-meriweather);
+    background-color: #e4f0e0;
+    background-color: #c1d3b6;
+    background: linear-gradient(
+    -135deg,
+    #e4f0e0 0%,
+    #c1d3b6 50%,
+    #f5f1e9 100%
+  );
+}
+
+/* aside section article.projects-skill-learning:nth-child(1){
+    top: calc(var(--spacing) * 2);
+} */
+
+aside section article.projects-skill-learning:nth-child(2){
+    top: calc(var(--spacing) * 2);
+    z-index: 4;
+    border: 1px red solid;
+}
+
+aside section article.projects-skill-learning:nth-child(3){
+    top: calc(var(--spacing) * 3);
+    border: 1px solid blue;
+    z-index: 5;
+    margin-bottom: 15rem;
+}
+
+
+
+
+aside section article.projects-skill-learning blockquote{
     margin-top: 0;
     
     font-size: 2rem;
@@ -194,7 +246,7 @@ aside section article.projects blockquote{
     color: #e85d04;
 }
 
-aside section article.projects p{
+aside section article.projects-skill-learning p{
     font-size: larger;
     padding: 0;
     margin: 0.5rem;
@@ -202,63 +254,11 @@ aside section article.projects p{
     color: #023e8a;
 }
 
-aside section article.skill{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    /* border-top: 1px black dashed; */
-
-    font-family: var(--p-font-family-meriweather);
-}
-
-aside section article.skill blockquote{
-    margin-top: 0;
-
-    font-size: 2rem;
-
-    color: #2a4d69;
-}
-
-aside section article.skill p{
-    font-size: larger;
-    padding: 0;
-    margin: 0.5rem;
-
-    color: #663d00;
-}
-
-
-aside section article.learning{
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: space-between;
-    /* border: 1px black solid; */
-    padding: 2rem;
-    font-family: var(--p-font-family-meriweather);
-}
-
-
-aside section article.learning blockquote{
-    margin-top: 0;
-
-    font-size: 2rem;
-
-    color: #e76f51;
-}
-
-aside section article.learning p{
-    font-size: larger;
-    padding: 0;
-    margin: 0.5rem;
-
-    color: #f4a261;
-}
-
 footer{
     display: flex;
     flex-direction: column;
+
+    /* position: ; */
 
     align-items: center;
     justify-content: space-between;
