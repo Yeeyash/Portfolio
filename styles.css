@@ -113,13 +113,14 @@ h1:hover + .image,h1:hover ~ .image{
 }
 
 main h1{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
 
     gap: 0;
     transition: gap 0.5s ease;
+    transition: padding 0.3s ease; /*might change ease to ease in/out */
 }
 
 main h1 span{
@@ -129,19 +130,36 @@ main h1 span{
 
 h1:hover{
     gap: 200px;
+    padding: 3rem 3rem 8rem;
     /* add more padding to push other elements down so that user should probably scroll, bottom animations where text goes down as well, also add arrow */
 }
 
 h1:hover .left{
-    transform: translateX(1rem);
+    transform: translate(1.5rem, 4rem)
 }
 
 h1:hover .right{
-    transform: translateX(3.5rem);
+    transform: translate(3.5rem, 4rem);
 }
 
 main .location{
     color: #390099;
+    position: relative;
+}
+
+main .location-icon{
+    font-size: 2rem;
+
+    position: absolute;
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: transform 0.3s ease;
+    /* transform: translateX(-10rem); */
+}
+
+.location:hover + .location-icon, .location:hover ~ .location-icon{
+    opacity: 1;
+    transform: translate(-10rem, 1rem);
 }
 
 main .course{
