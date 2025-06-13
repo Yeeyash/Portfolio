@@ -16,6 +16,8 @@ body{
     display: flex;
     flex-direction: column;
 
+    height: 300vh;
+
     background-color: #f1faee;
 }
 
@@ -179,15 +181,15 @@ aside section{
     border-top: 1px dashed black; /*change border later */
     border-bottom: 1px dashed black;
 
-    height: 55rem;
+    height: 90rem;
 }
 
 aside section article.projects-skill-learning{
     --spacing: 4rem;
 
-    height: calc(100vh - var(--spacing) * 4);
+    /* height: calc(100vh - var(--spacing) * 4); */
 
-    /* top: var(--spacing);     */
+    top: var(--spacing);    
 
     position: relative;
 
@@ -199,9 +201,11 @@ aside section article.projects-skill-learning{
     margin-bottom: 50px;
     border: 3px black solid;
     border-radius: 30px;
+    border-bottom: 0.625rem solid black;
 
+    height: 70%;
     width: 90vw;
-    z-index: 3;
+    z-index: 4;
     
     padding: 2rem;
 
@@ -223,15 +227,17 @@ aside section article.projects-skill-learning{
 } */
 
 aside section article.projects-skill-learning:nth-child(2){
-    top: calc(var(--spacing) * 2);
-    z-index: 4;
-    border: 1px red solid;
+    top: calc(var(--spacing) * 5);
+    z-index: 3;
+    height: 70%;
+    border-bottom: 0.625rem solid black;
 }
 
 aside section article.projects-skill-learning:nth-child(3){
-    top: calc(var(--spacing) * 3);
-    border: 1px solid blue;
-    z-index: 5;
+    top: calc(var(--spacing) * 11);
+    /* border: 1px solid blue; */
+    z-index: 2;
+    height: 70%;
     margin-bottom: 15rem;
 }
 
