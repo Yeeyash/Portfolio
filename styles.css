@@ -181,7 +181,7 @@ aside section{
     border-top: 1px dashed black; /*change border later */
     border-bottom: 1px dashed black;
 
-    height: 90rem;
+    height: 100rem;
 }
 
 aside section article.projects-skill-learning{
@@ -229,7 +229,9 @@ aside section article.projects-skill-learning{
 aside section article.projects-skill-learning:nth-child(2){
     top: calc(var(--spacing) * 5);
     z-index: 3;
-    height: 70%;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
     border-bottom: 0.625rem solid black;
 }
 
