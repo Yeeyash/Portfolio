@@ -2,12 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Newsreader&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Meriweather&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 
 :root{
     --name-font-family: 'Croissant One', sans-serif;
     --p-font-family: 'Newsreader', sans-serif;
     --main-font-family: 'Playfair Display', sans-serif;
     --p-font-family-meriweather: 'Meriweather', sans-serif;
+    --roboto-font: 'Roboto', sans-serif;
 }
 
 body{
@@ -183,23 +186,25 @@ aside section .aside{
 
     height: 90vh;
     width: 300vw;
+
+    /* overflow: hidden; */
 }
 
 aside section article.projects-skill-learning{
     --spacing: 4rem;
     top: var(--spacing);    
 
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 
     /* margin-bottom: 50px; */
     border: 3px black solid;
     border-radius: 30px;
     border-bottom: 0.625rem solid black;
 
-    height: 70vh;
+    height: 75vh;
     width: 100vw;
 
     /* padding: 2rem; */
@@ -213,6 +218,57 @@ aside section article.projects-skill-learning{
     #c1d3b6 50%,
     #f5f1e9 100%
   );
+}
+
+aside .workdone{
+    /* border: 1px solid black; */
+    font-family: var(--roboto-font);
+    font-weight: 900;
+    font-size: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 2rem;
+}
+
+aside img{
+
+    height: 300px;
+    width: 30%;
+
+    border-radius: 10px;
+
+}
+
+aside .smile{
+    display: flex;
+    padding: 1rem;
+
+    gap: 1rem;
+
+    border-bottom: 1px black dashed;
+    border-radius: 30px;
+}
+
+aside .smile p, .unity p{
+    font-family: var(--name-font-family);
+    font-size: 2rem;
+    font-weight: 900;
+    /* border: 1px solid black; */
+    width: 70%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside .unity{
+    display: flex;
+    padding: 1rem;
+
+    gap: 1rem;
 }
 
 footer{
