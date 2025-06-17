@@ -85,7 +85,7 @@ main{
 
     color: #ff5400;
 
-    position: relative;
+    position: static;
 
     padding: 3rem 3rem 6rem ;
 
@@ -169,47 +169,41 @@ main .course{
     color: #ffbd00;
 }
 
-aside section{
+aside section .aside{
 
     position: relative;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    /* gap: 6rem; */
+    justify-content: flex-start;
+    gap: 6rem;
     border-top: 1px dashed black; /*change border later */
     border-bottom: 1px dashed black;
 
-    height: 100rem;
+    
+    width: 300vw;
+    /* height: 400vh; */
 }
 
 aside section article.projects-skill-learning{
     --spacing: 4rem;
-
-    /* height: calc(100vh - var(--spacing) * 4); */
-
     top: var(--spacing);    
-
-    position: relative;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     border: 3px black solid;
     border-radius: 30px;
     border-bottom: 0.625rem solid black;
 
-    height: 70%;
-    width: 90vw;
-    z-index: 4;
+    /* height: 70vh; */
+    width: 100vw;
     
     padding: 2rem;
-
-    box-sizing: border-box;
 
     font-family: var(--p-font-family-meriweather);
     background-color: #e4f0e0;
@@ -220,46 +214,6 @@ aside section article.projects-skill-learning{
     #c1d3b6 50%,
     #f5f1e9 100%
   );
-}
-
-/* aside section article.projects-skill-learning:nth-child(1){
-    top: calc(var(--spacing) * 2);
-} */
-
-aside section article.projects-skill-learning:nth-child(2){
-    top: calc(var(--spacing) * 5);
-    z-index: 3;
-    justify-content: center;
-    align-items: center;
-    height: 80%;
-    border-bottom: 0.625rem solid black;
-}
-
-aside section article.projects-skill-learning:nth-child(3){
-    top: calc(var(--spacing) * 11);
-    /* border: 1px solid blue; */
-    z-index: 2;
-    height: 70%;
-    margin-bottom: 15rem;
-}
-
-
-
-
-aside section article.projects-skill-learning blockquote{
-    margin-top: 0;
-    
-    font-size: 2rem;
-
-    color: #e85d04;
-}
-
-aside section article.projects-skill-learning p{
-    font-size: larger;
-    padding: 0;
-    margin: 0.5rem;
-
-    color: #023e8a;
 }
 
 footer{
