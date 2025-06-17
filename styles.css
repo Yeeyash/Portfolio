@@ -16,7 +16,7 @@ body{
     display: flex;
     flex-direction: column;
 
-    height: 300vh;
+    /* height: 300vh; */
 
     background-color: #f1faee;
 }
@@ -171,7 +171,7 @@ main .course{
 
 aside section .aside{
 
-    position: relative;
+    /* position: relative; */
 
     display: flex;
     flex-direction: row;
@@ -181,9 +181,8 @@ aside section .aside{
     border-top: 1px dashed black; /*change border later */
     border-bottom: 1px dashed black;
 
-    
+    height: 90vh;
     width: 300vw;
-    /* height: 400vh; */
 }
 
 aside section article.projects-skill-learning{
@@ -200,10 +199,10 @@ aside section article.projects-skill-learning{
     border-radius: 30px;
     border-bottom: 0.625rem solid black;
 
-    /* height: 70vh; */
+    height: 70vh;
     width: 100vw;
-    
-    padding: 2rem;
+
+    /* padding: 2rem; */
 
     font-family: var(--p-font-family-meriweather);
     background-color: #e4f0e0;
