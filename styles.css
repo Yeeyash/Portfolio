@@ -179,8 +179,8 @@ aside section .aside{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    gap: 6rem;
+    justify-content: space-around;
+    /* gap: 6rem; */
     border-top: 1px dashed black; /*change border later */
     border-bottom: 1px dashed black;
 
@@ -205,7 +205,7 @@ aside section article.projects-skill-learning{
     border-bottom: 0.625rem solid black;
 
     height: 75vh;
-    width: 100vw;
+    width: 80vw;
 
     /* padding: 2rem; */
 
@@ -220,23 +220,50 @@ aside section article.projects-skill-learning{
   );
 }
 
+/* aside section article.projects-skill-learning:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    border: 10px blue solid;
+} */
+
+aside .first{
+    display: flex;
+    flex-direction: row;
+
+    /* margin: 0; */
+    padding: 0;
+
+    height: 100%;
+    width: 100%;
+
+    /* border: 10px blue solid; */
+
+}
+
 aside .workdone{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     font-family: var(--roboto-font);
-    font-weight: 900;
-    font-size: 1rem;
+    font-weight: 500;
+    font-size: 4rem;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
     
-    height: 2rem;
+    padding: 0;
+    /* width: 10%; */
+    /* height: 100%; */
+    margin: 0;
+    width: 10%;
 }
 
 aside img{
 
     height: 300px;
-    width: 30%;
+    width: auto;
 
     border-radius: 10px;
 
@@ -244,20 +271,24 @@ aside img{
 
 aside .smile{
     display: flex;
+    flex-direction: column;
     padding: 1rem;
 
-    gap: 1rem;
+    /* gap: 1rem; */
 
-    border-bottom: 1px black dashed;
+    border: 1px black dashed;
     border-radius: 30px;
+
+    
+
 }
 
 aside .smile p, .unity p{
-    font-family: var(--name-font-family);
+    font-family: var(--roboto-font);
     font-size: 2rem;
     font-weight: 900;
-    /* border: 1px solid black; */
-    width: 70%;
+    border: 1px solid black;
+    /* width: 70%; */
 
     display: flex;
     justify-content: center;
@@ -266,6 +297,7 @@ aside .smile p, .unity p{
 
 aside .unity{
     display: flex;
+    flex-direction: column;
     padding: 1rem;
 
     gap: 1rem;
