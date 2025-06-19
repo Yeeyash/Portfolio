@@ -3,7 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Newsreader&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Meriweather&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
 
 :root{
     --name-font-family: 'Croissant One', sans-serif;
@@ -11,6 +12,9 @@
     --main-font-family: 'Playfair Display', sans-serif;
     --p-font-family-meriweather: 'Meriweather', sans-serif;
     --roboto-font: 'Roboto', sans-serif;
+    --dm-sans-font: 'DM Sans', sans-serif;
+    --dm-mono-font: 'DM Mono', sans-serif;
+
 }
 
 body{
@@ -242,7 +246,7 @@ aside .first{
 
 aside .workdone{
     border: 1px solid black;
-    font-family: var(--roboto-font);
+    font-family: var(--dm-mono-font);
     font-weight: 500;
     font-size: 4rem;
 
@@ -266,6 +270,7 @@ aside img{
     width: auto;
 
     border-radius: 10px;
+    /* border: 1px black solid; */
 
 }
 
@@ -284,10 +289,14 @@ aside .smile{
 }
 
 aside .smile p, .unity p{
-    font-family: var(--roboto-font);
+
+    /* margin: 0; */
+    font-family: var(--dm-mono-font);
     font-size: 2rem;
-    font-weight: 900;
-    border: 1px solid black;
+    font-weight: 700;
+    text-align: center;
+
+    /* border: 1px solid black; */
     /* width: 70%; */
 
     display: flex;
@@ -300,7 +309,88 @@ aside .unity{
     flex-direction: column;
     padding: 1rem;
 
+    /* gap: 1rem; */
+}
+
+aside .smiletech{
+    /* border: 1px solid black; */
+    height: 100%;
+    
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    transform: translate(0, -20%);
+
     gap: 1rem;
+
+    list-style: none;
+    /* text-decoration: none; */
+    list-style-type: none;
+}
+
+aside .smiletech a:visited, a:link, a:active{
+    color: #023e8a;
+    text-decoration: none;
+}
+
+aside .smiletech .python{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px black solid; */
+
+    width: 150px;
+    /* height: 200px; */
+}
+
+aside .smiletech p{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-family: var(--dm-sans-font);
+}
+
+aside .smiletech .python svg{
+    width: 150px;
+    height: 60px;
+    /* color: #1a6899; */
+    background-color: rgb(223, 200, 75);
+    border-radius: 10px;
+    /* scale: 0.5; */
+}
+
+aside .smiletech .html{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+aside .smiletech .html svg{
+    width: 150px;
+    height: 60px;
+
+    background-color: rgb(252, 85, 56);
+    border-radius: 10px;
+}
+
+aside .smiletech .css{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+aside .smiletech .css svg{
+    width: 150px;
+    height: 60px;
+
+    background-color:#1a6899;
+    border-radius: 10px;
+}
+
+aside .smilename:visited, .smilename:active, .smilename:link{
+    color: black;
 }
 
 footer{
