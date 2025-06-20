@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const divv = document.querySelector('aside .aside');
 
@@ -24,3 +24,39 @@ ScrollTrigger.create({
     invalidateOnRefresh: true,
     markers: true
 })
+
+document.fonts.ready.then(() => {
+    let mysplitText = new SplitText(".project", {type:'chars', tag: 'span'});
+    let chars = mysplitText.chars;
+
+    const projecttween = gsap.to('.project', {
+        rotation: -90,
+        x: 600,
+        y: '110%',
+        // pin: true,
+        ease: 'power3.in'
+    });
+
+    ScrollTrigger.create({
+        trigger: 'main h1',
+        start: 'top top',
+        end: '+=300px',
+        animation: projecttween,
+        scrub: 1,
+        markers: true
+    })
+
+    gsap.from(chars, {
+        stagger: 0.05,
+        y: 130,
+        ease: 'back.out',
+        duration: 1,
+        scrollTrigger: {
+            trigger: 'main h1',
+            start: 'top 10%',
+            end: '+=1000px',
+            scrub: 1,
+            markers: true
+        }
+    })
+});

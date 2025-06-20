@@ -5,6 +5,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Host+Grotesk');
+@import url('https://fonts.googleapis.com/css?family=Syncopate');
+
 
 :root{
     --name-font-family: 'Croissant One', sans-serif;
@@ -14,7 +17,8 @@
     --roboto-font: 'Roboto', sans-serif;
     --dm-sans-font: 'DM Sans', sans-serif;
     --dm-mono-font: 'DM Mono', sans-serif;
-
+    --host-grotesk-font: 'Host Grotesk', sans-serif;
+    --syncopate-font: 'Syncopate', sans-serif;
 }
 
 body{
@@ -156,20 +160,11 @@ main .location{
     position: relative;
 }
 
-main .location-icon{
-    font-size: 2rem;
-
-    position: absolute;
-    opacity: 0;
-    transform: translateY(1rem);
-    transition: transform 0.3s ease;
-    /* transform: translateX(-10rem); */
-}
-
+/* 
 .location:hover + .location-icon, .location:hover ~ .location-icon{
     opacity: 1;
     transform: translate(-10rem, 1rem);
-}
+} */
 
 main .course{
     /* border: 1px black solid; */
@@ -186,12 +181,32 @@ aside section .aside{
     justify-content: space-around;
     /* gap: 6rem; */
     border-top: 1px dashed black; /*change border later */
+    border-top-left-radius: 90px;
     border-bottom: 1px dashed black;
 
     height: 90vh;
     width: 300vw;
 
     /* overflow: hidden; */
+}
+
+aside .projects-skill-learning .project{
+    display: flex;
+    /* border: 1px solid black; */
+    height: 30%;
+    padding-top: 1rem;
+
+    justify-content: center;
+    align-items: center;
+
+    /* transform: translate(0, -50%); */
+
+    font-size: 5rem;
+    font-family: var(--syncopate-font);
+    font-weight: 700;
+
+    padding: 0;
+    margin: 0;;
 }
 
 aside section article.projects-skill-learning{
@@ -224,12 +239,10 @@ aside section article.projects-skill-learning{
   );
 }
 
-/* aside section article.projects-skill-learning:nth-child(2){
-    display: flex;
-    flex-direction: column;
-    border: 10px blue solid;
-} */
-
+aside section article.projects-skill-learning:nth-child(1){
+    background: transparent;
+    border: none;
+}
 aside .first{
     display: flex;
     flex-direction: row;
@@ -247,6 +260,7 @@ aside .first{
 aside .workdone{
     border: 1px solid black;
     font-family: var(--dm-mono-font);
+    /* font-family: var(--host-grotesk-font); */
     font-weight: 500;
     font-size: 4rem;
 
@@ -292,8 +306,9 @@ aside .smile p, .unity p{
 
     /* margin: 0; */
     font-family: var(--dm-mono-font);
-    font-size: 2rem;
-    font-weight: 700;
+    font-family: var(--host-grotesk-font);
+    font-size: 2.5rem;
+    font-weight: 500;
     text-align: center;
 
     /* border: 1px solid black; */
@@ -312,7 +327,7 @@ aside .unity{
     /* gap: 1rem; */
 }
 
-aside .smiletech{
+aside .smiletech, .gametech{
     /* border: 1px solid black; */
     height: 100%;
     
@@ -331,7 +346,7 @@ aside .smiletech{
     list-style-type: none;
 }
 
-aside .smiletech a:visited, a:link, a:active{
+aside .smiletech, .gametech a:visited, a:link, a:active{
     color: #023e8a;
     text-decoration: none;
 }
@@ -345,11 +360,11 @@ aside .smiletech .python{
     /* height: 200px; */
 }
 
-aside .smiletech p{
+aside .smiletech p, .gametech p, .csharp p{
     margin: 0;
     padding: 0;
     font-size: 1.2rem;
-    font-family: var(--dm-sans-font);
+    font-family: var(--dm-mono-font);
 }
 
 aside .smiletech .python svg{
@@ -391,6 +406,32 @@ aside .smiletech .css svg{
 
 aside .smilename:visited, .smilename:active, .smilename:link{
     color: black;
+}
+
+aside .unityname:visited, .unity:active, .unityname:link{
+    color: black;
+}
+
+aside .gametech .unityicon, .csharp{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+aside .gametech .unityicon svg{
+    width: 150px;
+    height: 60px;
+
+    background-color: grey;
+    border-radius: 10px;
+}
+
+aside .gametech .csharp svg{
+    width: 150px;
+    height: 60px;
+
+    background-color: purple;
+    border-radius: 10px;
 }
 
 footer{
