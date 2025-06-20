@@ -32,7 +32,7 @@ document.fonts.ready.then(() => {
     const projecttween = gsap.to('.project', {
         rotation: -90,
         x: 600,
-        y: '110%',
+        y: '210%',
         // pin: true,
         ease: 'power3.in'
     });
@@ -40,7 +40,7 @@ document.fonts.ready.then(() => {
     ScrollTrigger.create({
         trigger: 'main h1',
         start: 'top top',
-        end: '+=300px',
+        end: '+=330px',
         animation: projecttween,
         scrub: 1,
         markers: true
