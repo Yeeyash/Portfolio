@@ -8,6 +8,8 @@
 @import url('https://fonts.googleapis.com/css?family=Host+Grotesk');
 @import url('https://fonts.googleapis.com/css?family=Syncopate');
 @import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Notable");
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
 
 
 :root{
@@ -21,6 +23,8 @@
     --host-grotesk-font: 'Host Grotesk', sans-serif;
     --syncopate-font: 'Syncopate', sans-serif;
     --monofett-font: 'Monofett', sans-serif;
+    --notable-font: 'Notable', sans-serif;
+    --fascinate-font: 'Fascinate', sans-serif;
 }
 
 @font-face {
@@ -38,6 +42,9 @@ body{
     /* height: 300vh; */
 
     background-color: #f1faee;
+    background-color: #F5F5DC; 
+
+    overflow-x: hidden;
 }
 
 body header{
@@ -105,6 +112,7 @@ main{
     /* font-weight: 900; */
 
     color: #ff5400;
+    color: #002147;
 
     /* position: static; */
 
@@ -150,12 +158,14 @@ main img{
 
 main .location{
     color: #390099;
+    color: #422D06;
     /* position: relative; */
 }
 
 main .course{
     /* border: 1px black solid; */
     color: #ffbd00;
+    color: #420606;
 }
 
 aside section .aside{
@@ -177,14 +187,151 @@ aside section .aside{
     /* overflow: hidden; */
 }
 
+aside .shortinfo{
+    /* display: none; */
+    position: absolute;
+    z-index: -1;
+
+    height: 75vh;
+    width: 65vw;
+
+    border: 1px black solid;
+
+    /* display: flex;
+    flex-direction: row; */
+}
+
+aside .shortinfo .pgood{
+    display: flex;
+
+    padding-left: 4rem;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: var(--dm-mono-font);
+
+    border-bottom: 5px solid black;
+
+    align-items: center;
+}
+
+aside .shortinfo .infocontainer{
+    display: flex;
+    flex-direction: row;
+
+    /* border: 1px solid burlywood; */
+    height: 90%;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 5rem;
+}
+
+aside .shortinfo .infocontainer .knowledge{
+    border: 1px solid salmon;
+    border-radius: 10px;
+
+    height: 75%;
+
+    margin-top: -100px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-size: 1.6rem;
+    font-family: var(--dm-sans-font);
+    font-weight: bold;
+
+    padding: 1rem;
+}
+
+aside .shortinfo .infocontainer .frontendskill{
+    /* border: 1px solid blueviolet; */
+    height: 85%;
+
+    margin-top: -100px;;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-size: 1.6rem;
+}
+
+aside .frontendskill .art, .gsapskill{
+    padding-left: 1rem;
+    margin-bottom: 0;
+    
+}
+
+aside .shortinfo .gsapskill{
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    
+    width: 100%;
+
+    /* margin-top: -150px; */
+    /* padding-bottom: 5rem; */
+
+    /* transform: translate(0, -100%); */
+
+    text-align: center;
+    
+    font-family: var(--notable-font);
+    font-size: 5rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
+aside .shortinfo .art{
+    border: 1px solid darkblue;
+    border-radius: 10px;
+
+    width: 100%;
+    text-align: center;
+
+    font-size: 2rem;
+    font-family: var(--notable-font);
+
+    /* padding: 1rem; */
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+}
+
+aside .design{
+    font-family: var(--monofett-font);
+    font-size: 4rem;
+    font-weight: 100;
+
+    text-align: center;
+}
+
+aside .art-word{
+    font-family: var(--fascinate-font);
+    font-style: italic;
+    font-size: 5rem;
+
+    text-align: right;
+}
+
 aside .projects-skill-learning .project{
     display: flex;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     height: 20%;
     padding-top: 1rem;
 
     justify-content: center;
     align-items: center;
+
+    z-index: 3;
 
     /* transform: translate(0, -50%); */
 

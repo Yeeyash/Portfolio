@@ -59,4 +59,25 @@ document.fonts.ready.then(() => {
             markers: true
         }
     })
+
+    let splitLocation = new SplitText(".location, .course", {type: 'chars'});
+    let locsplit = splitLocation.chars;
+
+    gsap.from(locsplit, {
+        yPercent: 'random([-100, 100])',
+        rotation: 'random(-30, 30)',
+        ease: 'back.out',
+        autoAlpha: 0,
+        stagger: {
+            amount: 0.5,
+            from: 'random',
+        },
+        scrollTrigger: {
+            trigger: 'body',
+            start: 'top top',
+            end: '+=300px',
+            scrub: 1,
+            markers: true
+        }
+    })
 });
