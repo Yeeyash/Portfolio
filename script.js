@@ -25,6 +25,56 @@ ScrollTrigger.create({
     markers: true
 })
 
+const colortween = gsap.to('.gsapskill', {
+    // backgroundImage: 'linear-gradient(135deg, hsla(198, 59%, 82%, 1) 29%, hsla(60, 57%, 91%, 1) 62%, hsla(33, 100%, 88%, 1) 100%)',
+    backgroundImage: 'linear-gradient(135deg, hsla(198, 59%, 82%, 1) 15%, hsla(198, 59%, 82%, 1) 23%, hsla(60, 57%, 91%, 1) 52%, hsla(44, 76%, 90%, 1) 76%, hsla(33, 100%, 88%, 1) 100%)',
+    ease: 'power1.out'
+})
+
+ScrollTrigger.create({
+    trigger: 'aside .aside',
+    start: 'top top',
+    end: '+=400px',
+    animation: colortween,
+    scrub: true,
+    markers: true
+})
+
+const goodcolortween = gsap.to('.goodat', {
+    backgroundImage: 'linear-gradient(90deg, hsla(198, 59%, 82%, 1) 15%, hsla(198, 59%, 82%, 1) 23%, hsla(60, 57%, 91%, 1) 52%, hsla(44, 76%, 90%, 1) 76%, hsla(33, 100%, 88%, 1) 100%)',
+    ease: 'power3.out'
+})
+
+ScrollTrigger.create({
+    trigger: 'aside .aside',
+    start: 'top top',
+    end: '+=400px',
+    animation: goodcolortween,
+    scrub: 1,
+    markers: true
+})
+
+const goodtween = gsap.to('.pgood', {
+    // right: '100px',
+    x: '50vw',
+    ease: 'power1.out'
+})
+
+ScrollTrigger.create({
+    trigger: '.shortinfo',
+    start: 'top top',
+    end: '+=400px',
+    animation: goodtween,
+    scrub: 1,
+    onLeave: () => {
+        document.querySelector('.pgood').style.display = 'none'
+    },
+    onEnterBack: () => {
+        document.querySelector('.pgood').style.display = 'block'
+    },
+    markers: true
+})
+
 document.fonts.ready.then(() => {
     let mysplitText = new SplitText(".project", {type:'chars', tag: 'span'});
     let chars = mysplitText.chars;

@@ -43,6 +43,26 @@ body{
 
     background-color: #f1faee;
     background-color: #F5F5DC; 
+    /* background-color: #2D2E2E; */
+    /* background: hsla(60, 56%, 91%, 1); */
+
+    /* background: linear-gradient(180deg, hsla(60, 56%, 91%, 1) 0%, hsla(60, 6%, 58%, 1) 57%, hsla(69, 4%, 39%, 1) 81%, hsla(180, 1%, 18%, 1) 100%); */
+
+    /* background: -moz-linear-gradient(180deg, hsla(60, 56%, 91%, 1) 0%, hsla(60, 6%, 58%, 1) 57%, hsla(69, 4%, 39%, 1) 81%, hsla(180, 1%, 18%, 1) 100%);
+
+    background: -webkit-linear-gradient(0deg, hsla(60, 56%, 91%, 1) 0%, hsla(60, 6%, 58%, 1) 57%, hsla(69, 4%, 39%, 1) 81%, hsla(180, 1%, 18%, 1) 100%); */
+
+    /* filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F5F5DC", endColorstr="#9B9B8E", GradientType=1 ); */
+
+    /* background: hsla(60, 56%, 91%, 1); */
+
+    background: linear-gradient(180deg, hsla(60, 57%, 91%) 0%, hsla(198, 59%, 82%) 31%, hsla(205, 89%, 75%, 1) 59%, hsla(207, 53%, 65%, 1) 72%, hsla(211, 32%, 55%, 1) 84%, hsla(227, 21%, 36%, 1) 100%);
+/* 
+background: -moz-linear-gradient(180deg, hsla(60, 56%, 91%, 1) 0%, hsla(198, 58%, 82%, 1) 31%, hsla(205, 89%, 75%, 1) 59%, hsla(207, 53%, 65%, 1) 72%, hsla(211, 32%, 55%, 1) 84%, hsla(227, 21%, 36%, 1) 100%);
+
+background: -webkit-linear-gradient(180deg, hsla(60, 56%, 91%, 1) 0%, hsla(198, 58%, 82%, 1) 31%, hsla(205, 89%, 75%, 1) 59%, hsla(207, 53%, 65%, 1) 72%, hsla(211, 32%, 55%, 1) 84%, hsla(227, 21%, 36%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#f5f5dc", endColorstr="#B7DCEC", GradientType=1 ); */
 
     overflow-x: hidden;
 }
@@ -196,22 +216,46 @@ aside .shortinfo{
     width: 65vw;
 
     border: 1px black solid;
+    border-bottom: 10px black solid;
+    border-right: 15px black solid;
+    border-radius: 10px;
 
     /* display: flex;
     flex-direction: row; */
 }
 
-aside .shortinfo .pgood{
+aside .shortinfo .goodat{
+    height: 10%;
+
     display: flex;
+    align-items: center;
+    width: 100%;
+
+    border-bottom: 5px black solid;
+    /* margin-bottom: -0.5rem; */
+    /* padding: 0.5rem; */
+}
+
+aside .shortinfo .pgood{
+    /* display: flex; */
+    position: relative;
+
+    /* margin: 0; */
+    /* width: 65vw; */
 
     padding-left: 4rem;
     font-size: 2rem;
     font-weight: 700;
     font-family: var(--dm-mono-font);
 
-    border-bottom: 5px solid black;
+    /* box-sizing: border-box; */
+    /* border-bottom: 5px solid black; */
+    /* outline: 5px solid black;
+    outline-offset: -5px; */
 
-    align-items: center;
+    /* align-items: center; */
+
+    /* margin-bottom: -0.5rem; */
 }
 
 aside .shortinfo .infocontainer{
@@ -223,6 +267,10 @@ aside .shortinfo .infocontainer{
 
     justify-content: center;
     align-items: center;
+
+    /* border-top: 5px black solid; */
+
+    padding-top: 1.5rem;
 
     gap: 5rem;
 }
@@ -250,9 +298,9 @@ aside .shortinfo .infocontainer .knowledge{
 
 aside .shortinfo .infocontainer .frontendskill{
     /* border: 1px solid blueviolet; */
-    height: 85%;
+    height: 95%;
 
-    margin-top: -100px;;
+    margin-top: -70px;
 
     display: flex;
     flex-direction: column;
@@ -265,6 +313,7 @@ aside .shortinfo .infocontainer .frontendskill{
 
 aside .frontendskill .art, .gsapskill{
     padding-left: 1rem;
+    padding-right: 1rem;
     margin-bottom: 0;
     
 }
@@ -274,6 +323,12 @@ aside .shortinfo .gsapskill{
     border-radius: 10px;
     
     width: 100%;
+
+    color: green;
+    /* background-color: #ffe4c4; */
+    /* background: linear-gradient(135deg, hsla(198, 59%, 82%, 1) 29%, hsla(60, 57%, 91%, 1) 62%, hsla(33, 100%, 88%, 1) 100%); */
+    background-color: transparent;
+    color: green;
 
     /* margin-top: -150px; */
     /* padding-bottom: 5rem; */
