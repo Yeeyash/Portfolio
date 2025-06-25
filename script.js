@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger, SplitText);
+gsap.registerPlugin(ScrollTrigger, SplitText, MotionPathPlugin);
 
 const divv = document.querySelector('aside .aside');
 
@@ -67,9 +67,8 @@ ScrollTrigger.create({
     markers: true
 })
 
-const gsaptween = gsap.to('.gsapskill', {
-    // color: 'linear-gradient(90deg, hsla(60, 56%, 91%, 1) 0%, hsla(81, 24%, 67%, 1) 10%, hsla(86, 21%, 58%, 1) 17%, hsla(90, 22%, 47%, 1) 39%, hsla(99, 44%, 39%, 1) 64%, hsla(101, 63%, 34%, 1) 86%, hsla(104, 99%, 28%, 1) 100%)',
-    // document.querySelector('.gsapskill').style.color: 'linear-gradient(to right, blue, yellow, green)',
+const gsaptween = gsap.to('.pgsap', {
+    backgroundPosition: '100% 0%',
     ease: 'power3.out'
 })
 
@@ -79,7 +78,7 @@ ScrollTrigger.create({
     end: '+=250px',
     animation: gsaptween,
     onUpdate: () => {
-        document.querySelector('.gsapskill').style.color = 'linear-gradient(90deg, hsla(60, 56%, 91%, 1) 0%, hsla(81, 24%, 67%, 1) 10%, hsla(86, 21%, 58%, 1) 17%, hsla(90, 22%, 47%, 1) 39%, hsla(99, 44%, 39%, 1) 64%, hsla(101, 63%, 34%, 1) 86%, hsla(104, 99%, 28%, 1) 100%)'
+        document.querySelector('.pgsap').style.color = 'linear-gradient(90deg, hsla(60, 56%, 91%, 1) 0%, hsla(81, 24%, 67%, 1) 10%, hsla(86, 21%, 58%, 1) 17%, hsla(90, 22%, 47%, 1) 39%, hsla(99, 44%, 39%, 1) 64%, hsla(101, 63%, 34%, 1) 86%, hsla(104, 99%, 28%, 1) 100%)'
     },
     scrub: 1,
     markers: true
@@ -120,6 +119,29 @@ ScrollTrigger.create({
     scrub: 1,
     markers: true
 })
+
+const starTween = gsap.to('.star', {
+    motionPath: {
+        path: '.path',
+        autoRotate: true,
+        align: '.path',
+        alignOrigin: [0.1, 0.1]
+    },
+    ease: 'none',
+    opacity: 1,
+    scale: 0.2
+});
+
+ScrollTrigger.create({
+    trigger: 'aside .aside',
+    start: 'top top',
+    end: '+=200px',
+    animation: starTween,
+    scrub: 1,
+    markers: true
+})
+
+
 
 document.fonts.ready.then(() => {
     let mysplitText = new SplitText(".project", {type:'chars', tag: 'span'});

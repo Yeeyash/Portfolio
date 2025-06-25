@@ -345,6 +345,48 @@ aside .shortinfo .gsapskill{
     font-weight: 700;
 }
 
+aside .pgsap{
+    background: linear-gradient(90deg, hsla(60, 56%, 91%, 1) 0%, hsla(81, 24%, 67%, 1) 10%, hsla(86, 21%, 58%, 1) 17%, hsla(90, 22%, 47%, 1) 39%, hsla(99, 44%, 39%, 1) 64%, hsla(101, 63%, 34%, 1) 86%, hsla(104, 99%, 28%, 1) 100%);
+    background: linear-gradient(90deg, hsla(60, 56%, 91%, 1) 0%, hsla(19, 67%, 48%, 1) 15%, hsla(46, 62%, 54%, 1) 33%, hsla(72, 61%, 46%, 1) 41%, hsla(142, 45%, 54%, 1) 55%, hsla(173, 43%, 53%, 1) 64%, hsla(275, 64%, 48%, 1) 87%, hsla(284, 53%, 35%, 1) 100%);;
+    background-clip: text;
+
+    color: transparent;
+    background-size: 200% 100%;
+    background-position: 0% 0%;
+}
+
+aside .shortinfo svg{
+    /* display: inline-block; */
+    /* z-index: 5; */
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    scale: 0.7;
+    rotate: 220deg;
+
+
+
+    top: 50%;
+    left: 25%;
+}
+
+aside .shortinfo .star{
+    margin: 0;
+    padding: 0;
+
+    scale: 0.1;
+
+    border-radius: 5px;
+    /* position: absolute; */
+
+    /* left: 0;
+    top: 100%; */
+
+    opacity: 0;
+}
+
 aside .shortinfo .art{
     border: 1px solid darkblue;
     border-radius: 10px;
