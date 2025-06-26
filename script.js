@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger, SplitText, MotionPathPlugin);
+gsap.registerPlugin(ScrollTrigger, SplitText, MotionPathPlugin, MotionPathHelper);
 
 const divv = document.querySelector('aside .aside');
 
@@ -10,7 +10,7 @@ function amounttoscroll(){
 const tween = gsap.to('aside .aside', {
     x: amounttoscroll,
     // scale:1.2,
-    ease: 'none'
+    ease: 'power1.out'
 });
 
 ScrollTrigger.create({
@@ -163,7 +163,7 @@ ScrollTrigger.create({
 })
 
 const shortinfoTween = gsap.to('.shortinfo', {
-    ease: 'none',
+    ease: 'power3.out',
     opacity: 1
 })
 
@@ -175,6 +175,25 @@ ScrollTrigger.create({
     scrub: 1,
     markers: true
 })
+
+// const lastdivTween = gsap.to('.lastcontainer', {
+//     height: '100vh',
+//     ease: 'none',
+// })
+
+// ScrollTrigger.create({
+//     trigger: 'aside .aside',
+//     start: 'top 10%',
+//     end: '+=100px',
+//     animation: lastdivTween,
+//     onLeave: () => {
+//         document.querySelector('.lastcontainer').style.height = '75vh';
+//         document.querySelector('.lastcontainer').style.transition = '0.3s ease';
+//     },
+//     scrub: 1,
+//     markers: true
+// })
+
 
 document.fonts.ready.then(() => {
     let mysplitText = new SplitText(".project", {type:'chars', tag: 'span'});
