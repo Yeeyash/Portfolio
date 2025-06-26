@@ -141,7 +141,40 @@ ScrollTrigger.create({
     markers: true
 })
 
+const eyeTween = gsap.to('.eyeimg', {
+    motionPath: {
+        path: '.upperPath',
+        autoRotate: true,
+        align: '.upperPath',
+        // alignOrigin: [0.2, -3.5]
+    },
+    ease: 'none',
+    opacity: 1,
+    scale: 0.25
+});
 
+ScrollTrigger.create({
+    trigger: 'aside .aside',
+    start: 'top 10%',
+    end: '+=200px',
+    animation: eyeTween,
+    scrub: 1,
+    markers: true
+})
+
+const shortinfoTween = gsap.to('.shortinfo', {
+    ease: 'none',
+    opacity: 1
+})
+
+ScrollTrigger.create({
+    trigger: 'aside .aside',
+    start: 'top 10%',
+    end: '+=400px',
+    animation: shortinfoTween,
+    scrub: 1,
+    markers: true
+})
 
 document.fonts.ready.then(() => {
     let mysplitText = new SplitText(".project", {type:'chars', tag: 'span'});
