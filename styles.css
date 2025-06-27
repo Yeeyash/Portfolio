@@ -39,7 +39,7 @@ body{
     display: flex;
     flex-direction: column;
 
-    /* height: 300vh; */
+    /* height: auto; */
 
     background-color: #f1faee;
     background-color: #F5F5DC; 
@@ -58,6 +58,7 @@ body{
 
     background: linear-gradient(180deg, #f5f5db 0%, #b6dcec 31%, #87c9f8 59%, #76aad5 72%, hsla(211, 32%, 55%, 1) 84%, hsla(227, 21%, 36%, 1) 100%);
     background-repeat: no-repeat;
+    /* background-size: contain; */
     /* 
 background: -moz-linear-gradient(180deg, hsla(60, 56%, 91%, 1) 0%, hsla(198, 58%, 82%, 1) 31%, hsla(205, 89%, 75%, 1) 59%, hsla(207, 53%, 65%, 1) 72%, hsla(211, 32%, 55%, 1) 84%, hsla(227, 21%, 36%, 1) 100%);
 
@@ -200,12 +201,16 @@ aside section .aside{
     /* gap: 6rem; */
     border-top: 1px dashed black; /*change border later */
     border-top-left-radius: 90px;
-    /* border-bottom: 1px dashed black; */
+    border-bottom: 1px dashed black;
 
-    /* height: 90vh; */
+    /* z-index: 1; */
+
+    height: 400vh;
     width: 300vw;
 
-    /* overflow: hidden; */
+    /* overflow: scroll; */
+
+    min-height: 0;
 
     padding-top: 4rem;
 }
@@ -530,8 +535,10 @@ aside .lastcontainer{
     display: flex;
     flex-direction: column;
     
-    height: 100%;
+    /* height: 100%; */
     width: 80vw;
+
+    /* z-index: 1; */
 }
 
 aside .heading{
@@ -545,9 +552,9 @@ aside .innerdiv{
     --spacing: 4rem;
     top: var(--spacing);    
 
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center;
     justify-content: center; */
 
     /* margin-bottom: 50px; */
@@ -569,8 +576,10 @@ aside .innerdiv{
     #c1d3b6 50%,
     #f5f1e9 100%);
 
-    height: 75vh;
-    flex-grow: 1;
+    /* flex-grow: 1; */
+
+    /* min-height: 0;
+    overflow: auto; */
 }
 
 aside .selftaughtdiv{
@@ -786,7 +795,9 @@ footer{
     padding: 0;
     margin: 0;
 
-    height: 100vh;
+    height: 200vh;   
+
+    z-index: 3;
 }
 
 footer .work{

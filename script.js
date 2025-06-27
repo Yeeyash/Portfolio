@@ -10,6 +10,7 @@ function amounttoscroll(){
 const tween = gsap.to('aside .aside', {
     x: amounttoscroll,
     // scale:1.2,
+    // horizontal: true,
     ease: 'power1.out'
 });
 
@@ -21,6 +22,13 @@ ScrollTrigger.create({
     pin: true,
     animation: tween,
     scrub: 1,
+    onLeave: () => {
+        document.querySelector('.innerdiv').style.flexGrow = 1;
+        document.querySelector('.innerdiv').style.transition = '0.3s ease';
+    },
+    onEnterBack: () => {
+        document.querySelector('.innerdiv').style.flexGrow = 0;
+    },
     invalidateOnRefresh: true,
     markers: true
 })
@@ -177,15 +185,15 @@ ScrollTrigger.create({
 })
 
 // const lastdivTween = gsap.to('.lastcontainer', {
-//     height: '100vh',
+//     height: '400vh',
 //     ease: 'none',
-// })
+// });
 
 // ScrollTrigger.create({
-//     trigger: 'aside .aside',
-//     start: 'top 10%',
-//     end: '+=100px',
-//     animation: lastdivTween,
+//     trigger: '.lastcontainer',
+//     start: 'center 70%',
+//     end: 'center 20%',
+//     containerAnimation: lastdivTween,
 //     onLeave: () => {
 //         document.querySelector('.lastcontainer').style.height = '75vh';
 //         document.querySelector('.lastcontainer').style.transition = '0.3s ease';
