@@ -205,7 +205,7 @@ aside section .aside{
 
     /* z-index: 1; */
 
-    height: 400vh;
+    height: 700vh;
     width: 300vw;
 
     /* overflow: scroll; */
@@ -550,12 +550,12 @@ aside .heading{
 
 aside .innerdiv{
     --spacing: 4rem;
-    top: var(--spacing);    
+    /* top: var(--spacing);     */
 
     display: flex;
     flex-direction: column;
-    /* align-items: center;
-    justify-content: center; */
+    align-items: center;
+    /* justify-content: space-between; */
 
     /* margin-bottom: 50px; */
     border: 3px black solid;
@@ -578,16 +578,77 @@ aside .innerdiv{
 
     /* flex-grow: 1; */
 
-    /* min-height: 0;
-    overflow: auto; */
+    overflow: hidden;
+
+    padding: 0;
+    margin: 0;
+}
+
+aside .innerdiv p, .innerdiv blockquote{
+    visibility: hidden;
 }
 
 aside .selftaughtdiv{
-    font-size: 2rem;
+    /* font-size: 20rem; */
 
     width: 100%;
-    height: auto;
+    /* height: 75vh; */
+
+    /* border: 1px solid black; */
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+
+    /* text-align: stretch; */
+
+    margin: 0;
+    padding: 0;
+
+    /* overflow: hidden; */
 }
+
+aside .selftaughtdiv .word {
+
+    display: inline-block;
+    flex-direction: column;
+
+    justify-content: center;
+    /* align-items: left; */
+
+    font-size: 20rem;
+
+    width: 100%;
+    /* text-align: center; */
+
+    padding: 0;
+    /* margin-top: 0; */
+
+    /* height: 75vh; */
+    text-align: left;
+    /* justify-content: center; */
+    border: 1px solid blue;
+    /* position: relative;
+
+    transform: translate(0, 20%); */
+
+    visibility: visible;
+    opacity: 1;
+}
+
+/* aside .word2{
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid black;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
 aside .first{
     display: flex;

@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger, SplitText, MotionPathPlugin, MotionPathHelper);
+gsap.registerPlugin(ScrollTrigger, SplitText, MotionPathPlugin, ScrollSmoother);
 
 const divv = document.querySelector('aside .aside');
 
@@ -23,15 +23,86 @@ ScrollTrigger.create({
     animation: tween,
     scrub: 1,
     onLeave: () => {
+        document.fonts.ready.then(() => {
+            let ps = document.querySelectorAll('.innerdiv p');
+            ps.forEach(ps => {ps.style.visibility = 'visible'})
+            
+            let selfsplit = new SplitText('.selftaughtdiv', {type: 'words', wordsClass: 'word++'});
+            let selfsplitted = selfsplit.words;
+
+            gsap.set(selfsplitted, {display: 'inline-block'});
+
+            gsap.from(selfsplitted, {
+                stagger: 0.05,
+                // y: -30,
+                // x: '40vw',
+                // rotation: 'random(-30,30)',
+                // textAlign: 'center',
+                ease: 'back.out',
+                autoAlpha: 0,
+
+                scrollTrigger: {
+                    trigger: '.lastcontainer',
+                    start: 'top top',
+                    end: '+=400px',
+                    scrub: 1,
+                    markers: true
+                }
+            });
+
+            // gsap.from('.innerdiv', {
+            //     ease: 'power3.out',
+            //     duration: 1,
+            //     border: '10px solid blue',
+            //     // fontSize: '10rem',
+            //     scrollTrigger: {
+            //         trigger: '.lastcontainer',
+            //         start: 'top 5%',
+            //         end: 'bottom bottom',
+            //         toggleActions: 'play none none reverse',
+            //         // scrub: 1,
+            //         markers: true
+            //     }
+            // });
+            
+        })
+
+        // const wordTween = gsap.to('.word1', {
+        //     x: '10vw',
+        //     ease: 'none'
+        // })
+
+        // ScrollTrigger.create({
+        //     trigger: '.lastcontainer',
+        //     pin: true,
+        //     start: 'top top',
+        //     end: '+=400px',
+        //     scrub: 1,
+        //     markers: true
+        // })
+
+        gsap.set('.innerdiv', {display: 'flex'});
         document.querySelector('.innerdiv').style.flexGrow = 1;
-        document.querySelector('.innerdiv').style.transition = '0.3s ease';
+        document.querySelector('.innerdiv').style.transition = '0.5s ease-out';
+        
+        
+
+
+        document.querySelector('.innerdiv blockquote').style.visibility = 'visible';
+
+       
     },
     onEnterBack: () => {
         document.querySelector('.innerdiv').style.flexGrow = 0;
+        // selfsplit.revert();
+        // selfsplitted.revert();
+
     },
     invalidateOnRefresh: true,
     markers: true
 })
+
+
 
 const colortween = gsap.to('.gsapskill', {
     backgroundImage: 'linear-gradient(135deg, hsla(198, 59%, 82%, 1) 15%, hsla(198, 59%, 82%, 1) 23%, hsla(60, 57%, 91%, 1) 52%, hsla(44, 76%, 90%, 1) 76%, hsla(33, 100%, 88%, 1) 100%)',
@@ -258,4 +329,58 @@ document.fonts.ready.then(() => {
             markers: true
         }
     })
+
+    
 });
+
+// document.fonts.ready.then(() => {
+//             let ps = document.querySelectorAll('.innerdiv p');
+//             ps.forEach(ps => {ps.style.visibility = 'visible'})
+            
+//             let selfsplit = new SplitText('.selftaughtdiv', {type: 'words', wordsClass: 'word++'});
+//             let selfsplitted = selfsplit.words;
+
+//             gsap.from(selfsplitted, {
+//                 stagger: 0.05,
+//                 y: -30,
+//                 x: '40vw',
+//                 rotation: 'random(-30,30)',
+//                 // textAlign: 'center',
+//                 ease: 'back.out',
+//                 autoAlpha: 0,
+
+//                 scrollTrigger: {
+//                     trigger: '.lastcontainer',
+//                     start: 'top top',
+//                     end: '+=400px',
+//                     scrub: 1,
+//                     onLeave: () => {
+//                         document.querySelector('.innerdiv blockquote').style.visibility = 'hidden';
+//                         ps.forEach(ps => {ps.style.visibility = 'hidden'})
+//                     },
+//                     markers: true
+//                 }
+//             })
+//         })
+
+const lastcontainerTween = gsap.to("aside .lastcontainer .selftaughtdiv", {
+    ease: 'none'
+});
+
+ScrollTrigger.create({
+    trigger: 'aside .lastcontainer',
+    start: 'top top',
+    end: '+=500vh',
+    scrub: 1,
+    markers: true
+})
+
+ScrollSmoother.create({
+            wrapper: "#smooth-wrapper",
+            content: "#smooth-content",
+            smooth: 1,
+            effects: true,
+            normalizeScroll: true
+        });
+
+ScrollTrigger.refresh();
