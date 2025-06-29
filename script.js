@@ -81,7 +81,7 @@ ScrollTrigger.create({
         //     markers: true
         // })
 
-        gsap.set('.innerdiv', {display: 'flex'});
+        gsap.set('.innerdiv', {display: 'flex', visibility: 'visible', backgroundColor: '#730000'});
         document.querySelector('.innerdiv').style.flexGrow = 1;
         document.querySelector('.innerdiv').style.transition = '0.5s ease-out';
         
