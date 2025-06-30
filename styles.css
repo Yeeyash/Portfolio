@@ -207,7 +207,7 @@ aside section .aside{
 
     /* z-index: 1; */
 
-    height: 700vh;
+    height: 500vh;
     width: 300vw;
 
     /* overflow: scroll; */
@@ -958,24 +958,123 @@ footer{
     /* position: ; */
 
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
-    font-family: var(--p-font-family-meriweather);
+    font-family: var(--dm-sans-font);
     font-size: 1.5rem;
 
     padding: 0;
     margin: 0;
 
-    height: 200vh;   
+    height: 100vh;   
 
     z-index: 3;
+
+    /* border: 1px solid white; */
 }
 
 footer .work{
-    font-style: italic;
-    font-weight: bold;
+    font-size: 3rem;
+    /* font-style: italic; */
+    font-weight: 900;
 
-    color: #1d3557;
+    color: gold;
+    color: #DADCBD;
+
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid white; */
+}
+
+footer .contactme{
+    border: 1px solid white;
+    border-radius: 0 30px 0 30px;
+
+    background-color: #3a0909;
+
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 90%;
+
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer .getintouch{
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: -1.5rem;
+
+    color: #DADCBD;
+}
+
+footer .formcontainer{
+    /* border: 1px solid white; */
+
+    width: 80%;
+    height: 70%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--dm-sans-font);
+    /* font-size: 3rem; */
+
+    gap: 2rem;
+}
+
+footer .form-group{
+    width: 55%;
+}
+
+footer .form-group input, textarea{
+    /* font-size: 3rem; */
+
+    width: 100%;
+    height: 4rem;
+
+    border-radius: 10px;
+    border-bottom: 0.625rem solid rgb(235, 164, 83);
+    box-shadow: 5px solid beige;
+
+    font-family: var(--dm-sans-font);
+    color: black;
+
+    box-sizing: border-box;
+
+    font-size: 1.3rem;
+
+    /* text-align: center; */
+}
+
+footer input::placeholder, textarea::placeholder{
+    /* width: 65%; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+form textarea::placeholder{
+    padding-top: 1rem;
+}
+
+footer form button{
+    width: 35%;
+    height: 4rem;
+
+    font-size: 1.5rem;
+
+    border-radius: 10px;
 }
 
 footer a{
