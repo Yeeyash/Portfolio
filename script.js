@@ -46,7 +46,7 @@ ScrollTrigger.create({
                     start: 'top top',
                     end: '+=400px',
                     scrub: 1,
-                    markers: true
+                    // markers: true
                 }
             });
 
@@ -99,7 +99,7 @@ ScrollTrigger.create({
 
     },
     invalidateOnRefresh: true,
-    markers: true
+    // markers: true
 })
 
 
@@ -115,7 +115,7 @@ ScrollTrigger.create({
     end: '+=300px',
     animation: colortween,
     scrub: true,
-    markers: true
+    // markers: true
 })
 
 const parenttween = gsap.to('.infocontainer', {
@@ -129,7 +129,7 @@ ScrollTrigger.create({
     end: '+=50px',
     animation: parenttween,
     scrub: 1,
-    markers: true
+    // markers: true
 })
 
 const goodcolortween = gsap.to('.goodat', {
@@ -143,7 +143,7 @@ ScrollTrigger.create({
     end: '+=200px',
     animation: goodcolortween,
     scrub: 1,
-    markers: true
+    // markers: true
 })
 
 const gsaptween = gsap.to('.pgsap', {
@@ -160,7 +160,7 @@ ScrollTrigger.create({
         document.querySelector('.pgsap').style.color = 'linear-gradient(90deg, hsla(60, 56%, 91%, 1) 0%, hsla(81, 24%, 67%, 1) 10%, hsla(86, 21%, 58%, 1) 17%, hsla(90, 22%, 47%, 1) 39%, hsla(99, 44%, 39%, 1) 64%, hsla(101, 63%, 34%, 1) 86%, hsla(104, 99%, 28%, 1) 100%)'
     },
     scrub: 1,
-    markers: true
+    // markers: true
 })
 
 const goodtween = gsap.to('.pgood', {
@@ -182,7 +182,7 @@ ScrollTrigger.create({
     onEnterBack: () => {
         document.querySelector('.pgood').style.opacity = 1
     },
-    markers: true
+    // markers: true
 })
 
 const arttween = gsap.to('.art', {
@@ -196,7 +196,7 @@ ScrollTrigger.create({
     end: '+=300px',
     animation: arttween,
     scrub: 1,
-    markers: true
+    // markers: true
 })
 
 const starTween = gsap.to('.star', {
@@ -217,7 +217,7 @@ ScrollTrigger.create({
     end: '+=200px',
     animation: starTween,
     scrub: 1,
-    markers: true
+    // markers: true
 })
 
 const eyeTween = gsap.to('.eyeimg', {
@@ -238,7 +238,7 @@ ScrollTrigger.create({
     end: '+=200px',
     animation: eyeTween,
     scrub: 1,
-    markers: true
+    // markers: true
 })
 
 const shortinfoTween = gsap.to('.shortinfo', {
@@ -252,7 +252,7 @@ ScrollTrigger.create({
     end: '+=400px',
     animation: shortinfoTween,
     scrub: 1,
-    markers: true
+    // markers: true
 })
 
 // const lastdivTween = gsap.to('.lastcontainer', {
@@ -292,7 +292,7 @@ document.fonts.ready.then(() => {
         end: '+=330px',
         animation: projecttween,
         scrub: 1,
-        markers: true
+        // markers: true
     })
 
     gsap.from(chars, {
@@ -305,7 +305,7 @@ document.fonts.ready.then(() => {
             start: 'top 10%',
             end: '+=1000px',
             scrub: 1,
-            markers: true
+            // markers: true
         }
     })
 
@@ -326,7 +326,7 @@ document.fonts.ready.then(() => {
             start: 'top top',
             end: '+=300px',
             scrub: 1,
-            markers: true
+            // markers: true
         }
     })
 
@@ -372,7 +372,7 @@ ScrollTrigger.create({
     start: 'top top',
     end: '+=500vh',
     scrub: 1,
-    markers: true
+    // markers: true
 })
 
 ScrollSmoother.create({
