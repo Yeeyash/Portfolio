@@ -213,7 +213,7 @@ main h1::selection{
 }
 
 main .content{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -555,7 +555,7 @@ aside .projects-skill-learning .project{
     justify-content: center;
     align-items: center;
 
-    z-index: 3;
+    /* z-index: 3; */
 
     /* transform: translate(0, -50%); */
 
@@ -1196,4 +1196,324 @@ footer a:link{
 
 footer a:visited{
     color: #ff5400;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px){
+    body header .name{
+        /* color: black; */
+        /* font-family: var(--syncopate-font); */
+
+        font-size: 1.5rem;
+    }
+
+    main img{
+        height: 150px;
+        width: 150px;
+    }
+
+    main{
+        font-size: 1.3rem;
+        color: red;
+    }
+
+    aside .shortinfo .pgood{
+        font-size: 1.5rem;
+    }
+
+    /* aside .shortinfo .infocontainer{
+        gap: 2.5rem;
+    } */
+
+    aside .shortinfo .infocontainer .knowledge{
+        font-size: 1.5rem;
+        margin-top: -3.5rem;
+    }
+
+    aside .shortinfo .gsapskill{
+        font-size: 4rem;
+        /* padding: 0; */
+    }
+
+    aside .shortinfo .art{
+        font-size: 1.5rem;
+    }
+
+    aside .design{
+        font-size: 3rem;
+    }
+
+    aside .art-word{
+        font-size: 3.9rem;
+    }
+
+    aside .workdone{
+        font-size: 3rem;
+    }
+
+    aside img{
+        height: 250px;
+    }
+
+    aside .smile p, .unity p{
+        font-size: 2.1rem;
+    }
+
+    aside .smiletech p, .gametech p, .csharp p{
+        font-size: 1.5rem;
+    }
+
+    aside .smiletech, .gametech{
+        transform: translate(0, -10%);
+    }
+
+    aside .selftaughtdiv .word{
+        font-size: 16rem;
+    }
+
+    aside .innerdiv .cdt .titlep{
+        font-size: 3rem;
+    }
+
+    aside .innerdiv .cdt .infop{
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 435px){
+    body header .name{
+        font-size: 1.1rem;
+    }
+
+    main{
+        flex-direction: column;
+        font-size: 1.3rem;
+        text-align: center;
+        /* justify-content: space-between; */
+        /* margin-bottom: 0; */
+        padding-bottom: 0;
+    }
+
+    main .content{
+        width: 100%;
+    }
+
+    /* main img{
+        height: 100px;
+        width: 100px;
+    } */
+
+    aside section .aside{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 700vh;
+
+        border: 1px solid black;
+
+        padding-top: 4rem;
+        justify-content: space-between;
+        justify-content: start;
+
+        gap: 50rem;
+
+
+        /* margin: 0; */
+        /* padding: 0; */
+        align-items: center;
+    }
+
+    aside .shortinfo{
+
+        padding-top: 0;
+        margin-top: 0;
+
+        display: block;
+        flex-direction: column;
+        position: relative;
+        opacity: 1;
+
+        border-bottom: 8px solid black;
+        border-right: 5px solid black;
+
+        width: 100%;
+        height: 100vh;
+        /* margin-bottom: 10rem; */
+    }
+
+    aside .shortinfo .infocontainer{
+        display: flex;
+        flex-direction: column;
+
+        justify-content: flex-start;
+
+        gap: 0.1rem;
+        /* justify-content: center; */
+    }
+
+    aside .shortinfo .infocontainer .knowledge{
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+        height: 50%;
+        height: auto;
+        width: 90%;
+        border-color: plum;
+        padding: 0;
+
+        display: flex;
+        justify-content: flex-start;
+        text-align: center;
+
+        z-index: 1;
+    }
+
+    aside .shortinfo .pgood{
+        font-size: 1.8rem;
+    }
+
+    aside .shortinfo .infocontainer .frontendskill{
+        
+        display: flex;
+        /* display: block; */
+        flex-direction: column;
+
+        height: 50%;
+        padding: 0;
+        /* border: 1px solid red; */
+        width: 100%;
+        /* margin: 0; */
+
+        transform: translate(0, 15%);
+
+        z-index: 1;
+
+        gap: 1rem;
+
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    aside .shortinfo .gsapskill{
+        font-size: 4rem;
+        height: 50%;
+        width: 90%;
+        padding: 0;
+    }
+
+    aside .shortinfo .art{
+        font-size: 2rem;
+        height: 70%;
+        width: 90%;
+        padding: 0;
+
+        /* border: none; */
+    }
+
+    aside .design{
+        font-size: 4rem;
+    }
+
+    aside .art-word{
+        font-size: 4rem;
+    }
+
+    aside .projects-skill-learning .project{
+        font-size: 2.5rem;
+        border: 1px solid black;
+        position: relative;
+
+        transform: translate(0, 25%);
+    }
+
+    aside .projects-skill-learning:nth-child(2){
+        border: 1px solid blue;
+
+        height: 150vh;
+
+        transform: translate(0, -20%);
+    }
+
+    aside .projects-skill-learning .first{
+        display: flex;
+        flex-direction: column;
+
+        height: 400vh;
+    }
+
+    aside .workdone{
+        writing-mode: horizontal-tb;
+        transform: none;
+
+        font-size: 3rem;
+        border: 1px solid black;
+        width: 100%;
+    }
+
+     aside .smile p, .unity p{
+        font-size: 2rem;
+    }
+
+    aside .smiletech, aside .gametech{
+        border: 1px solid black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    aside .smiletech .html, aside .smiletech .python, aside .smiletech .css{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        /* border: 1px solid black; */
+        padding: 0;
+        margin: 0;
+    }
+
+    aside .smiletech .html svg, aside .smiletech .python svg, aside .smiletech .css svg{
+        height: 50px;
+        width: 100px;
+
+        padding: 0;
+        margin: 0;
+        /* border: 1px solid black; */
+    }
+
+    aside .smiletech p, .gametech p, .csharp p{
+        font-size: 1.2rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    aside .smiletech, .gametech{
+        transform: translate(0, -10%);
+    }
+
+    aside .smile{
+        border: none;
+    }
+
+    aside .unity{
+        border-top: 5px solid black;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    aside .selftaughtdiv .word{
+        font-size: 16rem;
+    }
+
+    aside .innerdiv .cdt .titlep{
+        font-size: 3rem;
+    }
+
+    aside .innerdiv .cdt .infop{
+        font-size: 1.7rem;
+    }
+
 }
