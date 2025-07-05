@@ -1279,7 +1279,7 @@ footer a:visited{
     }
 }
 
-@media (max-width: 435px){
+@media (min-width: 391px) and (max-width: 435px){
     body header .name{
         font-size: 1.1rem;
     }
@@ -1498,6 +1498,8 @@ footer a:visited{
 
         height: 150vh;
 
+        height: auto;
+
         position: static;
 
         /* transform: translate(0, -20%); */
@@ -1674,6 +1676,464 @@ footer a:visited{
     aside .innerdiv .cdt .infop{
         height: auto;
         font-size: 1.5rem;
+
+        padding: 1rem;
+    }
+
+    aside .innerdiv .cdt:nth-child(4) .infop{
+        margin-bottom: 1rem;
+    }
+
+    footer .contactme{
+        height: 90%;
+        border-radius: 10px;
+    }
+
+    footer .work{
+        font-size: 2rem;
+        text-align: center;
+
+        height: auto;
+        margin: 0;
+        padding: 0;
+
+        /* border: 1px solid black; */
+    }
+
+    footer .formcontainer{
+        border: 1px solid white;
+        height: 80%;
+
+        padding: 1rem;
+    }
+
+    footer .form-group{
+        /* border: 1px solid wheat; */
+        width: 100%;
+    }
+
+    footer .getintouch{
+        font-size: 2rem;
+        /* border: 1px solid black; */
+        width: 100%;
+
+        margin-top: -3rem;
+        margin-bottom: 3rem;
+
+        display: flex;
+        text-align: left;
+        justify-content: flex-start;
+    }
+    
+    footer form button{
+        width: 90%;
+        height: 3.5rem;
+    }
+}
+
+@media (max-width: 390px){
+    body header .name{
+        font-size: 1.1rem;
+    }
+
+    main{
+        flex-direction: column;
+        font-size: 1.3rem;
+        text-align: center;
+        /* justify-content: space-between; */
+        /* margin-bottom: 0; */
+        padding-bottom: 0;
+    }
+
+    main .content{
+        width: 100%;
+    }
+
+    /* main img{
+        height: 100px;
+        width: 100px;
+    } */
+
+    aside section .aside{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 600vh;
+
+        border: 1px solid black;
+
+        /* padding-top: 4rem; */
+        justify-content: space-between;
+        /* justify-content: start; */
+
+        /* gap: 50rem; */
+
+
+        /* margin: 0; */
+        /* padding: 0; */
+        align-items: center;
+    }
+
+    aside .shortinfo{
+
+        padding-top: 0;
+        margin-top: 0;
+
+        display: flex;
+        flex-direction: column;
+        position: static;
+        opacity: 1;
+
+        z-index: 1;
+
+        flex: 1;
+
+        border-bottom: 8px solid black;
+        border-right: 5px solid black;
+
+        width: 100%;
+        /* height: 300vh; */
+        height: auto;
+        /* margin-bottom: 10rem; */
+    }
+
+    aside .shortinfo .infocontainer{
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-around;
+
+        z-index: 1;
+
+        /* gap: 0.1rem; */
+        /* justify-content: center; */
+
+        /* flex-wrap: wrap; */
+        /* overflow: hidden; */
+        /* height: auto; */
+    }
+
+    aside .shortinfo .infocontainer .knowledge{
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+        height: 50%;
+        height: auto;
+        width: 90%;
+        border-color: plum;
+        padding: 0;
+
+        /* flex: 1 1 auto; */
+
+        display: flex;
+        justify-content: flex-start;
+        text-align: center;
+
+        z-index: 1;
+    }
+
+    aside .shortinfo .pgood{
+        font-size: 1.8rem;
+    }
+
+    aside .shortinfo .infocontainer .frontendskill{
+        
+        display: flex;
+        /* display: block; */
+        flex-direction: column;
+
+        height: 50%;
+        padding: 0;
+        /* border: 1px solid red; */
+        width: 100%;
+        /* margin: 0; */
+
+        /* transform: translate(0, 15%); */
+
+        /* flex: 1 1 auto; */
+
+        z-index: 1;
+
+        gap: 1rem;
+
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    aside .shortinfo .gsapskill{
+        font-size: 2.8rem;
+        height: 50%;
+        /* height: auto; */
+        width: 90%;
+        padding: 0;
+
+        display: flex;
+        flex: 1;
+
+        justify-content: center;
+
+        z-index: 1;
+
+        /* padding: 0;
+        margin: 0; */
+        /* flex: 1 1 auto; */
+    }
+
+    aside .shortinfo .art{
+        font-size: 2rem;
+        height: 50%;
+        /* height: auto; */
+        width: 90%;
+        padding: 0;
+
+        flex: 1;
+
+        /* gap: 5rem; */
+
+        /* border: 1px solid red; */
+
+        z-index: 1;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+
+        /* border: none; */
+    }
+
+    aside .design{
+        font-size: 3.5rem;
+        margin: 0;
+        padding: 0;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    aside .art-word{
+        font-size: 3.5rem;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    aside .projects-skill-learning .project{
+        font-size: 2.2rem;
+        border: 1px solid black;
+        /* position: relative; */
+
+        z-index: 1;
+
+        display: flex;
+
+        /* margin: 1rem; */
+
+        /* justify-content: flex-start; */
+        margin-top: 2rem;
+
+        /* transform: translate(0, 25%); */
+    }
+
+    aside section article.projects-skill-learning:nth-child(1){
+        /* border: 5px solid black; */
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 2rem;
+    }
+
+    aside .projects-skill-learning:nth-child(2){
+        border: 1px solid blue;
+
+        height: 150vh;
+
+        height: auto;
+
+        position: static;
+
+        /* transform: translate(0, -20%); */
+    }
+
+    aside .projects-skill-learning .first{
+        display: flex;
+        flex-direction: column;
+
+        flex: 1;
+
+        height: auto; /* was 145vh */
+    }
+
+    aside .workdone{
+        writing-mode: horizontal-tb;
+        transform: none;
+
+        font-size: 2.5rem;
+        border: 1px solid black;
+        width: 100%;
+    }
+
+     aside .smile p, .unity p{
+        font-size: 1.6rem;
+    }
+
+    aside .smiletech, aside .gametech{
+        border: 1px solid black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    aside .smiletech .html, aside .smiletech .python, aside .smiletech .css{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        /* border: 1px solid black; */
+        padding: 0;
+        margin: 0;
+    }
+
+    aside .smiletech .html svg, aside .smiletech .python svg, aside .smiletech .css svg{
+        height: 50px;
+        width: 100px;
+
+        padding: 0;
+        margin: 0;
+        /* border: 1px solid black; */
+    }
+
+    aside .smiletech p, .gametech p, .csharp p{
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    aside .smiletech, .gametech{
+        transform: translate(0, -10%);
+    }
+
+    aside .smile{
+        border: none;
+    }
+
+    aside .unity{
+        border-top: 5px solid black;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    aside .selftaughtdiv .word{
+        font-size: 1rem;
+    }
+
+    aside .innerdiv .cdt .titlep{
+        font-size: 3rem;
+    }
+
+    aside .innerdiv .cdt .infop{
+        font-size: 1.7rem;
+    }
+
+    aside .innerdiv{
+        visibility: visible;
+
+        display: flex;
+        flex-direction: column;
+        /* transform: translate(0,-35%); */
+
+        /* height: 500vh;
+        height: auto; */
+
+        position: static;
+
+        height: 300vh;
+    }
+
+    aside .lastcontainer{
+        height: auto;
+        height: 300vh;
+
+        position: static;
+    }
+
+    aside .innerdiv p, .innerdiv blockquote{
+        visibility: visible;
+    }
+
+    aside .innerdiv .cdt{
+        display: flex;
+        flex-direction: column;
+
+        padding-top: 1rem;
+
+        height: 100%;
+        width: 100%;
+
+        gap: 2rem;
+
+    }
+
+    aside .selftaughtdiv .word{
+        font-size: 3.7rem;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+
+        width: 100%;
+        /* height: 20vh; */
+    }
+
+    aside .innerdiv .cdt img{
+        width: 95%;
+        height: auto;
+        border-radius: 10px;
+
+        /* padding-left: 0; */
+        margin-left: 0;
+    }
+
+    aside .innerdiv .cdt .textcdt{
+        display: flex;
+        flex-direction: column;
+
+        width: 95%;
+
+        /* border: 1px solid black; */
+        border-radius: 0;
+    }
+
+    aside .innerdiv .cdt .titlep{
+        font-size: 1.6rem;
+        height: auto;
+        padding: 1rem;
+
+        text-align: left;
+        justify-content: left;
+        
+    }
+
+    aside .innerdiv .cdt:nth-child(3) .titlep{
+        text-align: center;
+    }
+
+    aside .innerdiv .cdt .infop{
+        height: auto;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        font-size: 1.2rem;
 
         padding: 1rem;
     }
