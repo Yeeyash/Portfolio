@@ -1280,6 +1280,11 @@ footer a:visited{
 }
 
 @media (min-width: 391px) and (max-width: 435px){
+
+    html, body{
+        overflow-x: hidden;
+    }
+
     body header .name{
         font-size: 1.1rem;
     }
@@ -1343,6 +1348,18 @@ footer a:visited{
         /* height: 300vh; */
         height: auto;
         /* margin-bottom: 10rem; */
+    }
+
+    aside .shortinfo svg{
+        display: none;
+    }
+
+    aside .shortinfo .eyesvg{
+        visibility: hidden;
+    }
+
+    aside .shortinfo .star{
+        visibility: hidden;
     }
 
     aside .shortinfo .infocontainer{
@@ -1588,7 +1605,7 @@ footer a:visited{
     }
 
     aside .innerdiv .cdt .infop{
-        font-size: 1.7rem;
+        font-size: 1rem;
     }
 
     aside .innerdiv{
@@ -1674,8 +1691,13 @@ footer a:visited{
     }
 
     aside .innerdiv .cdt .infop{
-        height: auto;
-        font-size: 1.5rem;
+        height: 100%;
+        font-size: 1.35rem;
+
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         padding: 1rem;
     }
@@ -1721,8 +1743,8 @@ footer a:visited{
         margin-bottom: 3rem;
 
         display: flex;
-        text-align: left;
-        justify-content: flex-start;
+        text-align: center;
+        justify-content: center;
     }
     
     footer form button{
@@ -1732,6 +1754,12 @@ footer a:visited{
 }
 
 @media (max-width: 390px){
+
+    html, body{
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
     body header .name{
         font-size: 1.1rem;
     }
@@ -1795,6 +1823,18 @@ footer a:visited{
         /* height: 300vh; */
         height: auto;
         /* margin-bottom: 10rem; */
+    }
+
+    aside .shortinfo svg{
+        display: none;
+    }
+
+    aside .shortinfo .eyesvg{
+        visibility: hidden;
+    }
+
+    aside .shortinfo .star{
+        visibility: hidden;
     }
 
     aside .shortinfo .infocontainer{
@@ -2126,12 +2166,13 @@ footer a:visited{
     }
 
     aside .innerdiv .cdt .infop{
-        height: auto;
+        height: 100%;
 
         display: flex;
 
         justify-content: center;
         align-items: center;
+        text-align: justify;
 
         font-size: 1.2rem;
 
@@ -2179,8 +2220,8 @@ footer a:visited{
         margin-bottom: 3rem;
 
         display: flex;
-        text-align: left;
-        justify-content: flex-start;
+        text-align: center;
+        justify-content: center;
     }
     
     footer form button{
