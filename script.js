@@ -682,4 +682,15 @@ mm.add("(min-width: 1024px) and (max-width: 1439px)", () => {
 mm.add("(max-width: 470px)", () => {
     document.querySelector("main h1").textContent = "Machine Learning, Backend Development.";
     document.querySelector("aside .workdone").textContent = "Worked On,";
+
+    document.querySelector("aside .innerdiv .cdt .titlep:nth-child(1)").textContent = "Classification: Decision Trees and KNN.";
+
+    let selfsplit = new SplitText('.selftaughtdiv', {type: 'words', wordsClass: 'word++'});
+    let selfsplitted = selfsplit.words;
+
+    gsap.set(selfsplitted, {display: 'inline-block'});
+
+    // gsap.set('.innerdiv', {display: 'flex', visibility: 'visible', backgroundColor: '#730000'});
+    //         document.querySelector('.innerdiv').style.flexGrow = 1;
+    //         document.querySelector('.innerdiv').style.transition = '0.5s ease-out';
 });

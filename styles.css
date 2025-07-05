@@ -1306,7 +1306,7 @@ footer a:visited{
         display: flex;
         flex-direction: column;
         width: 100vw;
-        height: 700vh;
+        height: 590vh;
 
         border: 1px solid black;
 
@@ -1421,7 +1421,10 @@ footer a:visited{
         border: 1px solid black;
         position: relative;
 
-        transform: translate(0, 25%);
+        justify-content: flex-start;
+        margin-top: 2rem;
+
+        /* transform: translate(0, 25%); */
     }
 
     aside .projects-skill-learning:nth-child(2){
@@ -1436,7 +1439,7 @@ footer a:visited{
         display: flex;
         flex-direction: column;
 
-        height: 400vh;
+        height: auto; /* was 145vh */
     }
 
     aside .workdone{
@@ -1516,4 +1519,135 @@ footer a:visited{
         font-size: 1.7rem;
     }
 
+    aside .innerdiv{
+        visibility: visible;
+
+        display: flex;
+        flex-direction: column;
+        transform: translate(0,-35%);
+
+        height: 500vh;
+        height: auto;
+    }
+
+    aside .lastcontainer{
+        height: auto;
+    }
+
+    aside .innerdiv p, .innerdiv blockquote{
+        visibility: visible;
+    }
+
+    aside .innerdiv .cdt{
+        display: flex;
+        flex-direction: column;
+
+        padding-top: 1rem;
+
+        height: 100%;
+        width: 100%;
+
+        gap: 2rem;
+
+    }
+
+    aside .selftaughtdiv .word{
+        font-size: 4.2rem;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+
+        width: 100%;
+        /* height: 20vh; */
+    }
+
+    aside .innerdiv .cdt img{
+        width: 95%;
+        height: auto;
+        border-radius: 10px;
+
+        /* padding-left: 0; */
+        margin-left: 0;
+    }
+
+    aside .innerdiv .cdt .textcdt{
+        display: flex;
+        flex-direction: column;
+
+        width: 95%;
+
+        /* border: 1px solid black; */
+        border-radius: 0;
+    }
+
+    aside .innerdiv .cdt .titlep{
+        font-size: 1.8rem;
+        height: auto;
+        padding: 1rem;
+
+        text-align: left;
+        justify-content: left;
+        
+    }
+
+    aside .innerdiv .cdt:nth-child(3) .titlep{
+        text-align: center;
+    }
+
+    aside .innerdiv .cdt .infop{
+        height: auto;
+        font-size: 1.5rem;
+
+        padding: 1rem;
+    }
+
+    aside .innerdiv .cdt:nth-child(4) .infop{
+        margin-bottom: 1rem;
+    }
+
+    footer .contactme{
+        height: 90%;
+        border-radius: 10px;
+    }
+
+    footer .work{
+        font-size: 2rem;
+        text-align: center;
+
+        height: auto;
+        margin: 0;
+        padding: 0;
+
+        /* border: 1px solid black; */
+    }
+
+    footer .formcontainer{
+        border: 1px solid white;
+        height: 80%;
+
+        padding: 1rem;
+    }
+
+    footer .form-group{
+        /* border: 1px solid wheat; */
+        width: 100%;
+    }
+
+    footer .getintouch{
+        font-size: 2rem;
+        /* border: 1px solid black; */
+        width: 100%;
+
+        margin-top: -3rem;
+        margin-bottom: 3rem;
+
+        display: flex;
+        text-align: left;
+        justify-content: flex-start;
+    }
+    
+    footer form button{
+        width: 90%;
+        height: 3.5rem;
+    }
 }
