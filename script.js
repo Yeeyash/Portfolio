@@ -874,6 +874,14 @@ mm.add("(max-width: 470px)", () => {
         })
     })
 
+    ScrollSmoother.create({
+                wrapper: "#smooth-wrapper",
+                content: "#smooth-content",
+                smooth: 1,
+                effects: true,
+                normalizeScroll: true
+            });
+
     // gsap.set('.innerdiv', {display: 'flex', visibility: 'visible', backgroundColor: '#730000'});
     //         document.querySelector('.innerdiv').style.flexGrow = 1;
     //         document.querySelector('.innerdiv').style.transition = '0.5s ease-out';
