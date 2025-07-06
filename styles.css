@@ -1573,7 +1573,7 @@ footer a:visited{
         align-items: center;
 
         /* border: 1px solid black; */
-        padding: 0;
+        padding: 0.5rem;
         margin: 0;
     }
 
@@ -2067,18 +2067,18 @@ footer a:visited{
         gap: 0;
     }
 
-    aside .smiletech .html, aside .smiletech .python, aside .smiletech .css{
+    aside .smiletech .html, aside .smiletech .python, aside .smiletech .css, aside .gametech .unityicon,aside .gametech .csharp{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
         /* border: 1px solid black; */
-        padding: 0;
+        padding: 0.5rem;
         margin: 0;
     }
 
-    aside .smiletech .html svg, aside .smiletech .python svg, aside .smiletech .css svg{
+    aside .smiletech .html svg, aside .smiletech .python svg, aside .smiletech .css svg, aside .gametech .unityicon svg, aside .gametech .csharp svg{
         height: 50px;
         width: 100px;
 
