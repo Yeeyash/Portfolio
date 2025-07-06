@@ -213,7 +213,7 @@ main h1::selection{
 }
 
 main .content{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -1313,7 +1313,10 @@ footer a:visited{
         width: 100vw;
         height: 600vh;
 
-        border: 1px solid black;
+        border-top: 1px dashed black;
+        border-top-left-radius: 0;
+
+        border-bottom: 1px solid black;
 
         /* padding-top: 4rem; */
         justify-content: space-between;
@@ -1338,6 +1341,8 @@ footer a:visited{
         opacity: 1;
 
         z-index: 1;
+
+        opacity: 0;
 
         flex: 1;
 
@@ -1485,7 +1490,7 @@ footer a:visited{
 
     aside .projects-skill-learning .project{
         font-size: 2.5rem;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         /* position: relative; */
 
         z-index: 1;
@@ -1536,7 +1541,7 @@ footer a:visited{
         transform: none;
 
         font-size: 3rem;
-        border: 1px solid black;
+        border-bottom: 1px solid black;
         width: 100%;
     }
 
@@ -1556,7 +1561,7 @@ footer a:visited{
         gap: 0;
     }
 
-    aside .smiletech .html, aside .smiletech .python, aside .smiletech .css{
+    aside .smiletech .html, aside .smiletech .python, aside .smiletech .css, aside .gametech .unityicon, aside .gametech .csharp{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1567,7 +1572,7 @@ footer a:visited{
         margin: 0;
     }
 
-    aside .smiletech .html svg, aside .smiletech .python svg, aside .smiletech .css svg{
+    aside .smiletech .html svg, aside .smiletech .python svg, aside .smiletech .css svg, aside .gametech .unityicon svg, aside .gametech .csharp svg{
         height: 50px;
         width: 100px;
 
@@ -1773,6 +1778,14 @@ footer a:visited{
         padding-bottom: 0;
     }
 
+    main .location{
+        font-size: 1.5rem;
+    }
+
+    main .course{
+        font-size: 1.3rem;
+    }
+
     main .content{
         width: 100%;
     }
@@ -1788,7 +1801,9 @@ footer a:visited{
         width: 100vw;
         height: 600vh;
 
-        border: 1px solid black;
+        border-top: 1px dashed black;
+        border-top-left-radius: 0px;
+        border-bottom: 1px solid black;
 
         /* padding-top: 4rem; */
         justify-content: space-between;
@@ -1960,7 +1975,7 @@ footer a:visited{
 
     aside .projects-skill-learning .project{
         font-size: 2.2rem;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         /* position: relative; */
 
         z-index: 1;
@@ -2011,7 +2026,7 @@ footer a:visited{
         transform: none;
 
         font-size: 2.5rem;
-        border: 1px solid black;
+        border-bottom: 1px solid black;
         width: 100%;
     }
 
