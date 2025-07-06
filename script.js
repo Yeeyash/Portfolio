@@ -685,6 +685,8 @@ mm.add("(max-width: 470px)", () => {
 
     document.querySelector("aside .innerdiv .cdt .titlep:nth-child(1)").textContent = "Classification: Decision Trees and KNN.";
 
+    document.querySelector(".course").innerHTML = "<p>CSE AI/ML, A Sophomore."
+
     document.querySelector(".frontendskill .art").innerHTML = "<p>An Eye for Design and Art.</p>"
 
     gsap.set(".shortinfo", {opacity: 0});
